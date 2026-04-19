@@ -2,7 +2,7 @@ import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 
 
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
     return (
         <div>
             <div className="flex items-center py-3 px-10 bg-base-100 shadow-sm ">
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className='flex items-center gap-1'>
-                        <ShoppingCart></ShoppingCart>
+                        <ShoppingCart><p>{cartCount}</p></ShoppingCart>
                         <button className='btn btn-ghost rounded-full'>Login</button>
                         <button className='btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white font-bold rounded-full'>Get Started</button>
                     </div>

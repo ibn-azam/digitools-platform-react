@@ -1,13 +1,21 @@
+import { useState } from "react";
 import Features from "./Features";
 
 
-const Card = ({cardData}) => {
+const Card = ({cardData ,handleSelectedProducts}) => {
     const cardFeatures = cardData.features;
+    const [isSelected,setIsSelected]=useState(false);
+
+    const handleBuynowBtn=()=>{
+        setIsSelected(isSelected ? false : true);
+        handleSelectedProducts(cardData);
+        
+    }
     return (
         <div className='container mx-auto'>
-            <div className='px-6 py-3 min-w-[380px] min-h-80 bg-[#ffffff] border-2 border-[#f2f2f2] rounded-2xl shadow-md hover:translate-1'>
+            <div className='px-6 py-3 min-w-95 min-h-80 bg-[#ffffff] border-2 border-[#f2f2f2] rounded-2xl shadow-md hover:translate-1'>
                 <div className="flex justify-between ">
-                    <span>icon</span>
+                    <span><img src={cardData.icon} alt="" /></span>
                     <span className={cardData.tag === "Best Seller" ? `bg-[#fef3c6] text-[#bb4d00] px-2
                         py-1 rounded-full `:cardData.tag === "Popular" ? `bg-[#e1e7ff] text-[#4f39f6] px-2
                         py-1 rounded-full` : `bg-[#dbfce7] text-[#0a883e] px-2
@@ -21,7 +29,7 @@ const Card = ({cardData}) => {
                        cardFeatures.map(feature =><Features feature={feature}></Features>) 
                     }
                 </div>
-                <button className='btn w-full my-2 rounded-full text-white font-bold bg-linear-to-r from-[#4f39f6] to-[#9514fa]'>Buy Now</button>
+                <button onClick={handleBuynowBtn} className={`btn ${isSelected === true ? "w-full my-2 rounded-full text-white font-bold bg-green-600" : "w-full my-2 rounded-full text-white font-bold bg-linear-to-r from-[#4f39f6] to-[#9514fa]"}`}>Buy Now</button>
             </div>
         </div>
     );

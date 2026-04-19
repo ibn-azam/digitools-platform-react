@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Homepage from './Components/Homepage/Homepage'
@@ -13,14 +13,14 @@ const loadCardData = async()=>{
 }
 function App() {
   const cardPromise = loadCardData();
-
+  const [cartCount,setCartCount]=useState([]);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cartCount={cartCount}></Navbar>
       <Homepage></Homepage>
       <Banner></Banner>
       <Suspense fallback={<p>Loading.....</p>}>
-        <Products cardPromise={cardPromise}></Products>
+        <Products cardPromise={cardPromise} setCartCount={setCartCount}></Products>
       </Suspense>
     </>
   )
