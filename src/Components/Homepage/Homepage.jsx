@@ -37,9 +37,9 @@ const Homepage = () => {
           </button>
 
           <button className="relative inline-flex items-center gap-2 px-6 py-3 bg-white rounded-full">
-            <span className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-[#4f39f6] to-[#9514fa] -z-10" />
+            <span className="absolute -inset-0.5 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] -z-10" />
             <img src="../../../src/assets/Play.png" alt="" className="w-4 h-4" />
-            <span className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent font-semibold">
+            <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent font-semibold">
               Watch Demo
             </span>
           </button>
