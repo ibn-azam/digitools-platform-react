@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Features from "./Features";
+import { toast } from "react-toastify";
 
 
 const Card = ({cardData ,handleSelectedProducts}) => {
@@ -9,6 +10,9 @@ const Card = ({cardData ,handleSelectedProducts}) => {
     const handleBuynowBtn=()=>{
         setIsSelected(isSelected ? false : true);
         handleSelectedProducts(cardData);
+        toast(`${cardData.name} Added To The Cart`,{
+            position: "top-center",
+        });
         
     }
     return (

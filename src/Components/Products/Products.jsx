@@ -13,8 +13,8 @@ const Products = ({cardPromise,setCartCount}) => {
     }
     return (
         <div className='container mx-auto text-center '>
-            <h2 className='mb-4 font-bold text-5xl'>Premium Digital Tools</h2>
-            <p className='text-[16px] mb-4 border-none text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
+            <h2 className='mb-4 font-bold text-[40px] lg:text-5xl'>Premium Digital Tools</h2>
+            <p className='text-sm sm:text-base mb-5 text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
             <div>
                 <button onClick={()=>setSelectedType('Products')} className={`btn ${selectedType === 'Products' ? "rounded-l-full text-white font-bold bg-linear-to-r from-[#4f39f6] to-[#9514fa]" : "rounded-l-full border-none btn-active"}`}>Products</button>
                 

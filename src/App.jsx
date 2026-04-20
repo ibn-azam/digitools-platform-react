@@ -5,6 +5,7 @@ import Banner from './Components/Banner/Banner'
 import Homepage from './Components/Homepage/Homepage'
 import Navbar from './Components/Navbar/Navbar'
 import Products from './Components/Products/Products'
+import { ToastContainer } from 'react-toastify'
 
 
 const loadCardData = async()=>{
@@ -22,6 +23,8 @@ function App() {
       <Suspense fallback={<p>Loading.....</p>}>
         <Products cardPromise={cardPromise} setCartCount={setCartCount}></Products>
       </Suspense>
+{/* React toastify */}
+       <ToastContainer />
     </>
   )
 }
