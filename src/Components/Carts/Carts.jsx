@@ -1,3 +1,4 @@
+import { ShoppingCart } from "lucide-react";
 import React from "react";
 import { toast } from "react-toastify";
 
@@ -25,11 +26,9 @@ const Carts = ({ cardsData, setSelectedProducts }) => {
   return (
     <div>
       {cardsData.length === 0 ? (
-        <div className="border-2 h-50 border-[#f2f2f2] p-10 rounded-2xl flex flex-col my-5 mx-10">
-          <h2 className="text-center font-bold text-[#101727] text-[24px]  mb-2 mt-4">
-            No Card Selected Yet
-          </h2>
-          <p className="text-xl text-[#627382]">
+        <div className="border-2 h-50 border-[#f2f2f2] p-10 rounded-2xl flex flex-col justify-center items-center my-5 mx-10">
+          <ShoppingCart size={48} color="#627382" />
+          <p className="text-xl mt-3 text-[#627382]">
             Go To Products Tab To Purchase Products
           </p>
         </div>
