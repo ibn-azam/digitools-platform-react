@@ -1,4 +1,8 @@
 import React from "react";
+import Group from "../../../src/assets/group-5.png";
+import Banner from "../../../src/assets/banner.png";
+import PlayIcon from "../../../src/assets/Play.png";
+
 
 const Homepage = () => {
   return (
@@ -11,10 +15,10 @@ const Homepage = () => {
         <span className="bg-[#e1e7ff] flex gap-1 items-center justify-center rounded-full p-1 px-3 mb-4">
           <img
             className="animate-ping duration-100 w-4 h-4"
-            src="../../../src/assets/group-5.png"
-            alt=""
+            src={Group}
+            alt="Icon"
           />
-          <p className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent text-sm">
+          <p className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent text-sm">
             New: AI-Powered Tools Available
           </p>
         </span>
@@ -32,13 +36,13 @@ const Homepage = () => {
 
        
         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-          <button className="px-6 py-3 bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white font-bold rounded-full">
+          <button className="px-6 py-3 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white font-bold rounded-full">
             Explore Products
           </button>
 
           <button className="relative inline-flex items-center gap-2 px-6 py-3 bg-white rounded-full">
             <span className="absolute -inset-0.5 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] -z-10" />
-            <img src="../../../src/assets/Play.png" alt="" className="w-4 h-4" />
+            <img src={PlayIcon} alt="Play Icon" className="w-4 h-4" />
             <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent font-semibold">
               Watch Demo
             </span>
@@ -48,7 +52,7 @@ const Homepage = () => {
 
       <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg">
         <img
-          src="../../../src/assets/banner.png"
+          src={Banner}
           alt="Banner"
           className="w-full h-auto object-contain"
         />

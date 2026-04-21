@@ -1,4 +1,7 @@
 import React from 'react';
+import User from "../../../src/assets/user.png";
+import Package from "../../../src/assets/package.png";
+import Rocket from "../../../src/assets/rocket.png"
 
 const AccountCreation = () => {
     return (
@@ -14,7 +17,7 @@ const AccountCreation = () => {
                         <span className='w-10 h-10 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] flex items-center justify-center text-white font-semibold'>01</span>
                     </div>
                      <div className='flex flex-col justify-center items-center'>
-                        <span className='bg-linear-to-r from-[#4f39f636] to-[#9614fa36] p-2.5 rounded-full mb-4 mt-8'><img src="../../../src/assets/user.png" alt="" /></span>
+                        <span className='bg-linear-to-r from-[#4f39f636] to-[#9614fa36] p-2.5 rounded-full mb-4 mt-8'><img src={User} alt="" /></span>
                         <h4 className='text-2xl text-[#101727] font-bold mb-4'>Create Account</h4>
                         <p className='text-lg text-center text-[#627382] '>Sign up for free in seconds. No credit card required to get started.</p>
                      </div>
@@ -24,7 +27,7 @@ const AccountCreation = () => {
                         <span className='w-10 h-10 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] flex items-center justify-center text-white font-semibold'>02</span>
                     </div>
                      <div className='flex flex-col justify-center items-center'>
-                        <span className='bg-linear-to-r from-[#4f39f636] to-[#9614fa36] p-2.5 rounded-full mb-4 mt-8'><img src="../../../src/assets/package.png" alt="" /></span>
+                        <span className='bg-linear-to-r from-[#4f39f636] to-[#9614fa36] p-2.5 rounded-full mb-4 mt-8'><img src={Package} alt="" /></span>
                         <h4 className='text-2xl text-[#101727] font-bold mb-4'>Choose Products</h4>
                         <p className='text-lg text-center text-[#627382] '>Browse our catalog and select the tools
                         that fit your needs.
@@ -36,7 +39,7 @@ const AccountCreation = () => {
                         <span className='w-10 h-10 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] flex items-center justify-center text-white font-semibold'>03</span>
                     </div>
                      <div className='flex flex-col justify-center items-center'>
-                        <span className='bg-linear-to-r from-[#4f39f636] to-[#9614fa36] p-2.5 rounded-full mb-4 mt-8'><img src="../../../src/assets/rocket.png" alt="" /></span>
+                        <span className='bg-linear-to-r from-[#4f39f636] to-[#9614fa36] p-2.5 rounded-full mb-4 mt-8'><img src={Rocket} alt="" /></span>
                         <h4 className='text-2xl text-[#101727] font-bold mb-4'>Start Creating</h4>
                         <p className='text-lg text-center text-[#627382] '>Download and start using your premium 
                         tools immediately.
