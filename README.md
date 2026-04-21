@@ -1,16 +1,60 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ⚡ DigiTools Platform
 
-Currently, two official plugins are available:
+### *Supercharge Your Digital Workflow*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> Access premium AI tools, design assets, templates, and productivity software — all in one place.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 About The Project
 
-## Expanding the ESLint configuration
+**DigiTools** is a modern digital marketplace platform where users can discover, explore, and purchase premium digital products — including AI-powered tools, design assets, and productivity software. Built with a clean, responsive UI and a seamless cart experience, DigiTools makes it easy to supercharge your creative and professional workflow.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| ⚛️ **React 18** | Component-based UI |
+| ⚡ **Vite** | Lightning-fast dev & build tool |
+| 🎨 **Tailwind CSS** | Utility-first styling |
+| 🌼 **DaisyUI** | Pre-built UI component library |
+| 🧩 **Lucide React** | Icon library |
+| 🐙 **GitHub** | Version control & source code hosting |
+| 🌐 **Netlify** | Deployment & hosting |
+
+---
+
+## ✨ Features
+
+### 🛒 1. Smart Shopping Cart
+Add and remove products with ease. The cart dynamically updates totals in real time, and a single click on **Proceed to Checkout** clears your cart with a satisfying success confirmation.
+
+### 🤖 2. AI-Powered Tools Marketplace
+Browse a curated collection of premium AI tools and digital assets — all available in one platform, making it the go-to hub for modern creators and developers.
+
+### 📱 3. Fully Responsive Design
+Looks great on every screen size — from mobile to desktop. Built with Tailwind's responsive utilities for a smooth, adaptive layout that never breaks.
+
+---
+
+---
+
+## 🌐 Live Demo
+
+👉 **[https://digitools-platform-products.netlify.app/](https://digitools-platform-products.netlify.app/)**
+
+---
+
+## 🐙 GitHub Repository
+ 
+👉 **[https://github.com/ibn-azam/digitools-platform-react](https://github.com/ibn-azam/digitools-platform-react)**
+
+---
+
+Made with ❤️ using React & Tailwind CSS
+
+⭐ **Star this repo if you found it helpful!**
+
