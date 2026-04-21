@@ -8,6 +8,7 @@ import Products from './Components/Products/Products'
 import { ToastContainer } from 'react-toastify'
 import AccountCreation from './Components/AccountCreation/AccountCreation'
 import PricingSection from './Components/PricingSection/PricingSection'
+import WorkflowSection from './Components/WorkflowSection/WorkflowSection'
 
 
 const loadCardData = async()=>{
@@ -28,6 +29,7 @@ function App() {
 
       <AccountCreation></AccountCreation>
       <PricingSection></PricingSection>
+      <WorkflowSection></WorkflowSection>
 {/* React toastify */}
        <ToastContainer />
     </>
