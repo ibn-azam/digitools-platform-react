@@ -17,7 +17,7 @@ const Card = ({cardData ,handleSelectedProducts}) => {
     }
     return (
         <div className='container mx-auto'>
-            <div className='px-6 py-3 min-w-95 min-h-80 bg-[#ffffff] border-2 border-[#f2f2f2] rounded-2xl shadow-md hover:translate-1'>
+            <div className='px-6 py-3 min-w-95 min-h-80 bg-[#ffffff] border-2 border-[#f2f2f2] rounded-2xl shadow-md hover:translate-y-1'>
                 <div className="flex justify-between ">
                     <span><img src={cardData.icon} alt="" /></span>
                     <span className={cardData.tag === "Best Seller" ? `bg-[#fef3c6] text-[#bb4d00] px-2
